@@ -1,6 +1,10 @@
 import React from "react";
 import MyImage from "../assets/heroImage.png";
+import MyImage2 from "../assets/Sameer.jpeg";
+import MyImage3 from "../assets/Sameer2.png";
+import MyImage4 from "../assets/Sameer3.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
@@ -20,19 +24,24 @@ const Home = () => {
             React, Tailwind CSS, HTML, CSS, and vanilla JavaScript.
           </p>
           <div>
-            <button className="group text-white w-fit px-6 py-3 my-2 flex item-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
+            <Link
+              to="portfolio"
+              smooth
+              duration={500}
+              className="group text-white w-fit px-6 py-3 my-2 flex item-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+            >
               Porfolio
               <span className="group-hover:rotate-90 duration-300">
                 <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
               </span>
-            </button>
+            </Link>
           </div>
         </div>
 
-        <div>
+        <div className="">
           <img
-            className="rounded-2xl mx-auto w-2/3 md:w-2/3"
-            src={MyImage}
+            className="rounded-[50px] mx-auto w-2/3 md:w-2/3"
+            src={MyImage3}
             alt="My Profile"
           />
         </div>
